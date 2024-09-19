@@ -1,0 +1,11 @@
+{
+    "name": "FeedsXML",
+    "alias": "feedsxml",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\FeedsXML\\Providers\\FeedsXMLServiceProvider"
+    ],
+    "files": []
+}
