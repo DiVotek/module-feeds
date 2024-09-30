@@ -1,18 +1,17 @@
 <?php
 
-namespace Modules\FeedXML\Models;
+namespace Modules\FeedsXML\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Feeds extends Model
 {
     protected $fillable = [
-        'feeds'
+        'name'
     ];
 
-    public function feed_fileds()
+    public function fields()
     {
-        return $this->belongsToMany(Feed_Fields::class);
+        return $this->hasMany(FeedFields::class, 'feed_id');
     }
 }

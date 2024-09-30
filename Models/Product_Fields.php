@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\FeedXML\Models;
+namespace Modules\FeedsXML\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Modules\FeedsXML\Models\Feed_Fields;
 
 class Product_Fields extends Model
 {
@@ -13,6 +13,6 @@ class Product_Fields extends Model
     ];
 
     public function feeds(){
-        return $this->belongToMany(Feeds::class);
+        return $this->belongTo(FeedFields::class);
     }
 }
